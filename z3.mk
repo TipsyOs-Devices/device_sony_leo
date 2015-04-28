@@ -54,4 +54,7 @@ $(call inherit-product, vendor/sony/z3/z3-vendor.mk)
 # DeviceHandler
 PRODUCT_PACKAGES += \
     DeviceHandler
-    
+
+# Prebuilts    
+$(call inherit-product-if-exists, prebuilts/chromium/webview_prebuilt.mk)
+
