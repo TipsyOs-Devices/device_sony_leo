@@ -16,22 +16,22 @@
 include device/sony/shinano-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
-#-include vendor/sony/sirius/BoardConfigVendor.mk
+#-include vendor/sony/z3/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := D6502,D6503,D6506,D6543,sirius
+TARGET_OTA_ASSERT_DEVICE := D6602,D6603,D6633,D6643,z3
 
-TARGET_SPECIFIC_HEADER_PATH += device/sony/sirius/include
+TARGET_SPECIFIC_HEADER_PATH += device/sony/z3/include
 
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/sirius/bluetooth
+BOARD_HARDWARE_CLASS += device/sony/z3/cmhw
 
 # Kernel properties
-TARGET_KERNEL_CONFIG := cm_shinano_sirius_defconfig
+TARGET_KERNEL_CONFIG := cm_shinano_leo_defconfig
 
 # Partition information
-BOARD_VOLD_MAX_PARTITIONS := 26
+BOARD_VOLD_MAX_PARTITIONS := 25
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 12656242688 # 12656259072 - 16384
 
-BOARD_BOOTIMAGE_PARTITION_SIZE := 0x01400000
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x01400000
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1056964608
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
+# SELinux
+BOARD_SEPOLICY_DIRS += \
+    device/sony/z3/sepolicy

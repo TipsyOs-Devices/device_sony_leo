@@ -14,10 +14,25 @@
  * limitations under the License.
  */
 
-#define LED_BACKLIGHT_PATH "/sys/class/leds/wled:backlight/"
+package org.cyanogenmod.hardware;
 
-#define LED_RED_PATH "/sys/class/leds/led:rgb_red/"
-#define LED_GREEN_PATH "/sys/class/leds/led:rgb_green/"
-#define LED_BLUE_PATH "/sys/class/leds/led:rgb_blue/"
+import org.cyanogenmod.hardware.util.FileUtils;
 
-#define LED_BRIGHTNESS_MIN 188
+public class TapToWake {
+
+    private static String CONTROL_PATH = "/sys/devices/virtual/input/clearpad/wakeup_gesture";
+    private static boolean mEnabled = false;
+
+    public static boolean isSupported() {
+        return true;
+    }
+
+    public static boolean isEnabled()  {
+        return mEnabled;
+    }
+
+    public static boolean setEnabled(boolean state)  {
+        mEnabled = state;
+        return FileUtils.writeLine(CONTROL_PATH, (state ? "1" : "0"));
+    }
+}

@@ -4,9 +4,11 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
-$(call inherit-product, device/sony/sirius/full_sirius.mk)
+$(call inherit-product, device/sony/z3/full_z3.mk)
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=C6903 BUILD_FINGERPRINT=Sony/D6503/D6503:4.4.2/17.1.A.2.55/yPd_dw:user/release-keys PRIVATE_BUILD_DESC="D6503-user 4.4.2 17.1.A.2.55 yPd_dw release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=D6603
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=Sony/D6603/D6603:5.0.2/23.1.A.0.690/814068233:user/release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="D6603-user 5.0.2 23.1.A.0.690 814068233 release-keys"
 
-PRODUCT_NAME := cm_sirius
-PRODUCT_DEVICE := sirius
+PRODUCT_NAME := cm_z3
+PRODUCT_DEVICE := z3
