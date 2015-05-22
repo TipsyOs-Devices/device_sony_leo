@@ -48,3 +48,8 @@ BOARD_SEPOLICY_DIRS += \
 PRODUCT_PACKAGES += \
     DeviceHandler
 
+# Multirom
+MR_DPI := xhdpi
+MR_DPI_FONT := 340
+MR_KEXEC_MEM_MIN := 0x80200000
+
