@@ -1,1 +1,1 @@
-add_lunch_combo eos_z3-userdebug
+add_lunch_combo tesla_z3-userdebug
