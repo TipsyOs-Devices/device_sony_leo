@@ -1,1 +1,1 @@
-add_lunch_combo tesla_z3-userdebug
+add_lunch_combo tipsy_z3-userdebug
