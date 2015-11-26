@@ -7,7 +7,7 @@
   },
   {
    "remote":  "github",
-   "repository": "TipsyOs/device_sony_shinano-common",
+   "repository": "TipsyOs-Devices/device_sony_shinano-common",
    "target_path": "device/sony/shinano-common",
    "branch": "lp5.1"
   },
