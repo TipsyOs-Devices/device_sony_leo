@@ -24,4 +24,6 @@ BOARD_KERNEL_CMDLINE += androidboot.hardware=leo
 
 PRODUCT_VENDOR_KERNEL_HEADERS += device/sony/leo/kernel-headers
 
+BOARD_HARDWARE_CLASS += device/sony/leo/cmhw
+
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
