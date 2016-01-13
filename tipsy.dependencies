@@ -27,7 +27,7 @@
     "remote":       "github",
     "repository":   "XperiaProject/kernel_sony_msm",
     "target_path":  "kernel/sony/msm",
-    "branch":     "master"
+    "branch":     "M-6.0"
   },
   {
     "remote":       "github",

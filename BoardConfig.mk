@@ -18,8 +18,6 @@ include device/sony/shinano/BoardConfig2.mk
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D6602,D6603,D6633,D6643,D6653,z3,leo
 
-BOARD_HARDWARE_CLASS += device/sony/leo/cmhw
-
 TARGET_BOOTLOADER_BOARD_NAME := D6603
 
 #Reserve space for data encryption (12656259072-16384)
@@ -42,3 +40,8 @@ STRICT_ALIASING := false
 KRAIT_TUNINGS := true
 GRAPHITE_OPTS := false
 ENABLE_GCCONLY := true
+
+BOARD_HARDWARE_CLASS += device/sony/leo/cmhw
+
+TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
+
