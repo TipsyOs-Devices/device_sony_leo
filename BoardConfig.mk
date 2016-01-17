@@ -31,7 +31,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12656242688
 PRODUCT_VENDOR_KERNEL_HEADERS += device/sony/leo/kernel-headers
 
 # Kernel Toolchain
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9/bin
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 
 # Rom Toolchain
